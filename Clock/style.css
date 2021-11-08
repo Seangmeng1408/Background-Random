@@ -1,0 +1,82 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+body{
+    width: 100%;
+    height: 100%;
+    background-position: center ;
+    background-size: cover;
+}
+#Timesection{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#btnsection{
+    
+    display: flex;
+    /* flex-direction: column; */
+    justify-content: center;
+    align-items: center;
+}
+#btnsection button{
+    padding:1em;
+    border: none;
+    background-color: aqua;
+    border-radius: .3em;
+    cursor: pointer;
+    box-shadow:1.5px 1.5px 10px rgba(0,0,0,.5) ;
+
+}
+#btnsection button:active{
+    box-shadow: none;
+}
+button+button{
+    margin-left: 1em;
+}
+
+h1 {
+    border: none;
+    outline: none;
+    margin: 1em 0 0;
+    padding: 0;
+    font-size:1.5em
+}
+span{
+    color: red;
+}
+h2{
+    font-size: 1.2em;
+    margin: 0;
+}
+p{
+    margin:.5em 0 ;
+    font-size:2em;
+}
+@media only screen and (max-width: 600px) {
+    p,
+    h2{
+        font-size:10vw;
+
+        
+    }
+    h1{
+        font-size: 14vw;
+    }
+    #btnsection{
+        flex-direction: column;
+        
+        
+    }
+    #btnsection button{
+        width: 80vw;
+        padding: 3vw;
+        font-size: 5vw;
+    }
+    button+button{
+        margin: 1rem 0 0;
+    }
+}

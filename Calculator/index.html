@@ -1,0 +1,72 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="app.js" defer></script>
+    
+</head>
+<body>
+    <div id="container">
+        <p class="result">
+            <span class="old_value"></span>
+            <br>
+            <span class="op"></span>
+            <span class="new_value">0</span>
+        </p>
+        <div id="sub-container">
+            <div ><button class="operator" id="+">+</button>
+                <button class="number" id="7">7</button>
+                <button class="number" id="4">4</button>
+                <button class="number" id="1">1</button>
+                <button class="number" id="0">0</button>
+            </div>
+            <div ><button class="operator" id="-">-</button>
+                <button class="number" id="8">8</button>
+                <button class="number" id="5">5</button>
+                <button class="number" id="2">2</button>
+                <button class="number" id=".">.</button>
+            </div>
+            <div ><button class="operator" id="*">&times</button>
+                <button class="number" id="9">9</button>
+                <button class="number" id="6">6</button>
+                <button class="number" id="3">3</button>
+                <button class="clear">C</button>
+            </div>
+            <div><button class="operator" id="/">&divide</button>
+                <button class="equal" id="=">=</button>
+            </div>
+        </div>
+    </div>
+    <style>
+        .result{
+            font-size: 2rem;
+            width: 90%;
+            height:auto;
+            background-color:#87b1f8 ;
+            text-align:right;
+            padding:0 2rem ;
+            border-radius: 10px;
+            margin: 0 auto;
+            margin-top:.5rem;
+            position: relative;
+            word-wrap:break-word ;
+        }
+        .old_value{
+            font-size: medium;
+            opacity: .7;
+            
+        }
+        .new_value{
+            font-size: normal;
+        }
+        .op{
+            position: absolute;
+            left:50%;
+            transform: translateX(50%)
+        }
+    </style>
+</body>
+</html>

@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+HK:wght@500&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color:rgba(206, 93, 93,0.7);
+    display:flex;
+    justify-content:center;
+    width:100%;
+    height:100vh;
+    position:relative;
+    overflow:scroll;
+    
+}
+#container{
+    width:35%;
+    height:auto;
+    position:absolute;
+    top: 20%;
+}
+#container button{
+    width:50px;
+    height: 25px;
+    font-family: 'Noto Sans HK', sans-serif;
+    font-size:14px;
+    background:transparent;
+    border:none;
+    outline:none;
+    border-radius: 20px;
+    position: absolute;
+    right:0;
+    transition:300ms;
+    margin-bottom: 1rem;
+
+}
+#container button:hover{
+    background-image:linear-gradient(120deg,rgba(243, 9, 9,0.6), rgba(255, 255, 14,0.6));
+    box-shadow:0 0 10px black;
+    
+}
+h1{
+    font-family: 'Lobster', cursive;
+    font-size:2rem;
+    position: absolute;
+    top: 2rem;
+    left:5rem;
+    margin: 1rem 2rem;
+
+}
+input{
+    width:100%;
+    font-family: 'Noto Sans HK', sans-serif;
+    font-size:18px;
+    border:none;
+    outline:none;
+    background:transparent;
+    border-bottom: 2px solid rgba(255, 0, 0,0.5);
+
+}
+input:focus{
+    border-bottom:2px solid rgb(255, 0, 0);
+}
+#task li{
+    list-style: none;
+    font-size:1.5rem;
+    padding:0.5rem 1rem;
+    background-color: #ffff;
+    border-bottom: 1px solid #0000;
+    cursor:pointer;
+    
+
+}
+#task ul{
+    margin-top: 5px;
+
+}
+#task li.complete{
+    text-decoration:line-through;
+    color:rgb(136, 136, 136);
+}
+
+@media only screen and (max-width: 600px){
+    #container{
+        width:80%;
+        top: 30%;
+    }
+}

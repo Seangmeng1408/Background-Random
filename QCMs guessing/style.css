@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=Train+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200&family=Train+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Zen+Dots&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color:rgb(160,254,114);
+    position:relative;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    flex-direction: column;
+    
+}
+p{
+    font-family: 'Train One', cursive;
+    font-size:2rem;
+    margin-top: 10rem;
+    margin-bottom:2rem;
+
+}
+button{
+    padding:1em;
+    background:#ffff;
+    border: none;
+    outline:none;
+    cursor:pointer;
+    border-radius: 10px;
+    font-family: 'Train One', cursive;
+    font-size:1.5rem;
+
+}
+span{
+    font-family: 'Zen Dots', cursive;
+    font-size:4rem !important;  
+    color: red;
+    text-transform:capitalize;
+}
+li{
+    font-family: 'Zen Dots', cursive;
+    font-size:1.5rem;
+    margin-bottom:0.5rem;
+    margin-left: 1.5rem;
+
+    
+}
+
+ol{
+
+    margin: 1.5rem;
+}
+@media only screen and (max-width: 600px) {
+    p{
+
+        font-size:6vw;
+
+    
+    }
+    span{
+
+        font-size:7vw !important;  
+
+    }
+
+  }

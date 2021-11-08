@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css2?family=Train+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200&family=Train+One&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background:rgb(50,195,203);
+    position:relative;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    flex-direction:column;
+}
+#stopwatch{
+    margin: 10px;
+    font-size: 3em;
+    font-family: 'Train One', cursive;
+}
+h1{
+    font-family: 'Train One', cursive;
+    color:black;
+    font-size: 3em;
+    margin-top: 10rem;
+}
+ul{
+    display: flex;
+    justify-content:space-around;
+    align-items:center;
+}
+ul li{
+    list-style:none;
+   
+}
+li+li{
+    margin-left:3rem;
+}
+button{
+    font-family: 'Train One', cursive;
+    border: none;
+    outline: none;
+    background-color: rgb(171,68,159);
+    border-radius: 5px;
+    font-size:2em;
+    padding:0.5em;
+    cursor: pointer;
+    transition:0.5s;
+
+    
+}
+button:hover{
+    background-color: rgb(148, 44, 134);
+
+}
+@media only screen and (max-width: 600px){
+    button{
+        font-size:1.5rem;
+    }
+    h1{
+        font-size:2em;
+    }
+    #stopwatch{
+        font-size:1.5rem;
+    }
+}

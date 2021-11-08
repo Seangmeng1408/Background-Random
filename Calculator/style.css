@@ -1,0 +1,52 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    width: 100%;
+    height: 100%;
+    background-color:rgb(250,108,118);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 12px;
+}
+#container{
+    position: relative;
+    width: 400px;
+    height: auto;
+    border: 1rem black solid;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    
+    
+}
+#sub-container{
+    position: relative;
+    display: flex;
+    /* grid-template-columns: 1fr 1fr 1fr 1fr; */
+    /* flex-direction: column; */
+    
+}
+#sub-container div{
+    position: relative;
+}
+#sub-container div button{
+    display: block;
+
+    
+}
+
+button{
+    padding: 1em;
+    margin: .5em;
+    font-size: 2em;
+}
+.equal{
+    height: 76% !important;
+}
