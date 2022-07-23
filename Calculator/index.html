@@ -3,70 +3,52 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Calculator</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@400;500&family=Macondo&family=Redressed&family=Roboto+Serif:opsz,wght@8..144,300&family=Square+Peg&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <script src="app.js" defer></script>
-    
+    <title>Calculator</title>
 </head>
 <body>
+    
+
     <div id="container">
-        <p class="result">
-            <span class="old_value"></span>
-            <br>
-            <span class="op"></span>
-            <span class="new_value">0</span>
-        </p>
-        <div id="sub-container">
-            <div ><button class="operator" id="+">+</button>
-                <button class="number" id="7">7</button>
-                <button class="number" id="4">4</button>
-                <button class="number" id="1">1</button>
-                <button class="number" id="0">0</button>
-            </div>
-            <div ><button class="operator" id="-">-</button>
-                <button class="number" id="8">8</button>
-                <button class="number" id="5">5</button>
-                <button class="number" id="2">2</button>
-                <button class="number" id=".">.</button>
-            </div>
-            <div ><button class="operator" id="*">&times</button>
-                <button class="number" id="9">9</button>
-                <button class="number" id="6">6</button>
-                <button class="number" id="3">3</button>
-                <button class="clear">C</button>
-            </div>
-            <div><button class="operator" id="/">&divide</button>
-                <button class="equal" id="=">=</button>
-            </div>
+        <center>
+            <h1>Calculator</h1>
+        </center>
+        <div id="output">
+            <p class="output expression">0</p>
+            <h2 class="output input" >0</h2>
+        </div>
+        <div id="operation">
+            <!-- Operation button -->
+            <button class="operand" data-actual-value="+">+</button>
+            <button class="operand" data-actual-value="-">-</button>
+            <button class="operand" data-actual-value="*">×</button>
+            <button class="operand" id="delete" title="delete"data-actual-value="d">⇐</button>
+            <button class="operand" data-actual-value="/">/</button>
+            <button class="operand" data-actual-value="(">(</button>
+            <button class="operand" data-actual-value=")">)</button>
+
+
+            <button class="operand" id="equal" data-actual-value="=">=</button>
+
+            <button class="operand" id="clear" title="clear" data-actual-value="c">C</button>
+        <!-- num pad -->
+            <button class="number" data-actual-value="7">7</button>
+            <button class="number" data-actual-value="8">8</button>
+            <button class="number" data-actual-value="9">9</button>
+            <button class="number" data-actual-value="4">4</button>
+            <button class="number" data-actual-value="5">5</button>
+            <button class="number" data-actual-value="6">6</button>
+            <button class="number" data-actual-value="1">1</button>
+            <button class="number" data-actual-value="2">2</button>
+            <button class="number" data-actual-value="3">3</button>
+            <button class="number" data-actual-value="0">0</button>
+            <button class="number" data-actual-value=".">.</button>
         </div>
     </div>
-    <style>
-        .result{
-            font-size: 2rem;
-            width: 90%;
-            height:auto;
-            background-color:#87b1f8 ;
-            text-align:right;
-            padding:0 2rem ;
-            border-radius: 10px;
-            margin: 0 auto;
-            margin-top:.5rem;
-            position: relative;
-            word-wrap:break-word ;
-        }
-        .old_value{
-            font-size: medium;
-            opacity: .7;
-            
-        }
-        .new_value{
-            font-size: normal;
-        }
-        .op{
-            position: absolute;
-            left:50%;
-            transform: translateX(50%)
-        }
-    </style>
+    <div id="cpr">Develop by|DIN SEANGMENG</div>
 </body>
 </html>

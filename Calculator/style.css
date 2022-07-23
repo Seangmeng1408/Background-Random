@@ -1,52 +1,125 @@
-
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-body{
-    width: 100%;
-    height: 100%;
-    background-color:rgb(250,108,118);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 12px;
-}
-#container{
-    position: relative;
-    width: 400px;
-    height: auto;
-    border: 1rem black solid;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    background-color: white;
-    
-    
-}
-#sub-container{
-    position: relative;
-    display: flex;
-    /* grid-template-columns: 1fr 1fr 1fr 1fr; */
-    /* flex-direction: column; */
-    
-}
-#sub-container div{
-    position: relative;
-}
-#sub-container div button{
-    display: block;
-
-    
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
-button{
-    padding: 1em;
-    margin: .5em;
-    font-size: 2em;
+body {
+  background-color: #00b3ff;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
-.equal{
-    height: 76% !important;
+
+body #container {
+  width: 20em;
+  padding: 1em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border: solid 2px #00eaea;
+  -webkit-box-shadow: 0 0 10px #00eaea, 0 0 10px #00eaea inset;
+          box-shadow: 0 0 10px #00eaea, 0 0 10px #00eaea inset;
+  gap: .5em;
 }
+
+body #container h1 {
+  font-family: 'Macondo', cursive;
+  font-size: 2.5em;
+}
+
+body #container #output {
+  width: 100%;
+  position: relative;
+  background-color: white;
+  border-radius: 1px;
+}
+
+body #container #output .expression {
+  font-size: small;
+  opacity: .5;
+}
+
+body #container #output .input {
+  font-size: large;
+  opacity: .7;
+}
+
+body #container #output .output {
+  width: 100%;
+  padding: 0 5px;
+  text-align: right;
+}
+
+body #container #output .output:first-child {
+  border-bottom: dashed 1px black;
+}
+
+body #container #operation {
+  width: 100%;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[4];
+      grid-template-columns: repeat(4, 1fr);
+  gap: 1px;
+}
+
+body #container #operation button {
+  padding: .5em 2em;
+  border: solid 1px black;
+  cursor: pointer;
+}
+
+body #container #operation button:hover {
+  opacity: 0.9;
+}
+
+body #container #operation #delete {
+  background-color: #03adcb;
+}
+
+body #container #operation #equal {
+  background-color: #08ce82;
+  -ms-grid-row: 2;
+  -ms-grid-row-span: 5;
+  grid-row: 2/7;
+  -ms-grid-column: 4;
+  grid-column: 4;
+}
+
+body #container #operation #clear {
+  background: red;
+  -ms-grid-row: 6;
+  -ms-grid-row-span: 1;
+  grid-row: 6/7;
+  -ms-grid-column: 3;
+  -ms-grid-column-span: 1;
+  grid-column: 3/4;
+}
+
+body #cpr {
+  width: 100%;
+  font-size: .8em;
+  position: absolute;
+  text-align: center;
+  background-color: aqua;
+  -webkit-box-shadow: 0 0 15px aqua, 1px 0 10px #04d8d8 inset;
+          box-shadow: 0 0 15px aqua, 1px 0 10px #04d8d8 inset;
+  bottom: 0;
+}
+/*# sourceMappingURL=style.css.map */
