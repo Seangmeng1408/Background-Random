@@ -87,6 +87,31 @@ body{
 
         box-shadow: 0 0 15px aqua,
                     1px 0 10px rgb(4, 216, 216) inset;
-        bottom: 0;
+        bottom: 3px;
+        a{
+            text-decoration: none;
+            font-weight: bold;
+            color: black;
+            position: relative;
+            &::after{
+                content: "";
+                background: rgb(0, 0, 0);
+                box-shadow: 0 0 15px rgb(0, 0, 0),
+                             1px 0 10px rgb(0, 0, 0) inset;
+                width: 0;
+                height: 1.5px;
+                position: absolute;
+                z-index: 1000;
+                bottom: 0;
+                left: 0;
+                transition:  250ms ease-in-out;
+                
+            }
+            &:hover{
+                &::after{
+                    width: 100%;
+                }
+            }
+        }
     }
 }

@@ -120,6 +120,32 @@ body #cpr {
   background-color: aqua;
   -webkit-box-shadow: 0 0 15px aqua, 1px 0 10px #04d8d8 inset;
           box-shadow: 0 0 15px aqua, 1px 0 10px #04d8d8 inset;
+  bottom: 3px;
+}
+
+body #cpr a {
+  text-decoration: none;
+  font-weight: bold;
+  color: black;
+  position: relative;
+}
+
+body #cpr a::after {
+  content: "";
+  background: black;
+  -webkit-box-shadow: 0 0 15px black, 1px 0 10px black inset;
+          box-shadow: 0 0 15px black, 1px 0 10px black inset;
+  width: 0;
+  height: 1.5px;
+  position: absolute;
+  z-index: 1000;
   bottom: 0;
+  left: 0;
+  -webkit-transition: 250ms ease-in-out;
+  transition: 250ms ease-in-out;
+}
+
+body #cpr a:hover::after {
+  width: 100%;
 }
 /*# sourceMappingURL=style.css.map */
