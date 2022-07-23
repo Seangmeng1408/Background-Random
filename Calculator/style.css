@@ -64,6 +64,7 @@ body #container #output .output {
   width: 100%;
   padding: 0 5px;
   text-align: right;
+  overflow-wrap: break-word;
 }
 
 body #container #output .output:first-child {
